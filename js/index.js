@@ -41,6 +41,20 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     
 })
 
+document.getElementById('rhombus-btn').addEventListener('click', function(){
+    count ++;
+    const rhombusTitle = document.getElementById('rhombus-title').innerText;
+    const firstRhombusValue = document.getElementById('rhombus-first-value').value;
+    const secondRhombusValue = document.getElementById('rhombus-second-value').value;
+
+    const areaValue= 0.5 * parseInt(firstRhombusValue) * parseInt(secondRhombusValue);
+
+    const rhombusValue = areaValue;
+
+    displayData(rhombusTitle, rhombusValue);
+    
+})
+
 document.getElementById('pentagon-btn').addEventListener('click', function(){
     count ++;
     const pentagonTitle = document.getElementById('pentagon-title').innerText;
@@ -80,3 +94,59 @@ function displayData(shapeTitle, shapeValue) {
     `;
     tableContainer.appendChild(tr);
 }
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+var div = document.getElementById( 'colorchange1' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+  this.style.backgroundColor = 'transparent';
+};
+
+var div = document.getElementById( 'colorchange2' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+    this.style.backgroundColor = 'transparent';
+};
+
+var div = document.getElementById( 'colorchange3' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+    this.style.backgroundColor = 'transparent';
+};
+
+var div = document.getElementById( 'colorchange4' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+    this.style.backgroundColor = 'transparent';
+};
+
+var div = document.getElementById( 'colorchange5' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+    this.style.backgroundColor = 'transparent';
+};
+
+var div = document.getElementById( 'colorchange6' );
+div.onmouseover = function() {
+  this.style.backgroundColor = getRandomColor();
+};
+div.onmouseout = function() {
+    this.style.backgroundColor = 'transparent';
+};
