@@ -13,7 +13,202 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Hi</h1>
+    <header>
+      <nav>
+        <div class="navbar rounded-lg bg-sky-100 mt-5">
+          <div class="navbar-start">
+            <a class="btn btn-ghost normal-case font-bold text-4xl"
+              ><p>Interactive</p></a
+            >
+          </div>
+
+          <div class="navbar-end mr-7 p-3">
+            <a class="btn bg-[#1090D8] border-0 px-8">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  -->
+
+    <main>
+      <section class="flex flex-col md:flex-row lg:flex-row">
+        <div class="geometric-card-details w-full md:w-[65%] lg:w-[65%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/triangle.png" alt="Triangle" class="rounded-xl -full h-40">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area(A) = <span>0.5</span> * <span>b</span> * <span>h</span></p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type Height" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/rectangle.png" alt="rectangle" class="rounded-xl -full h-40"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area(A) = <span>w</span> * <span>l</span></p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type Length" class="input input-xs w-full max-w-xs"/> 
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type Width" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl -full h-40"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area(A) = <span>b</span> * <span>h</span></p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type Height" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/rhombus.png" alt="rhombus" class="rounded-xl -full h-40"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>
+                    Area(A) = <span>0.5</span> * <span>d1</span> * <span>d2</span>
+                  </p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type Diagonal 1" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type Diagonal 2" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl -full h-40"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area(A) = <span>0.5</span> * <span>p</span> * <span>b</span></p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure class="px-5 pt-10">
+                  <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl -full h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area(A) = <span>&#960;</span>a<span>b</span></p>
+                  <div class="card-actions">
+                    <div>
+                      <div class="form-control">
+                        <label class="input-group input-group-xs">
+                          <span>b</span>
+                          <input type="text" placeholder="Type A Axis" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                        <br />
+                        <label class="input-group input-group-xs">
+                          <span>h</span>
+                          <input type="text" placeholder="Type B Axis" class="input input-xs w-full max-w-xs"/>
+                        </label>
+                      </div>
+                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+        </div>
+
+        <div class="w-full md:w-[40%] lg:w-[40%] mx-auto">
+            <h1 class="text-3xl text-center font-bold underline mt-10">Area Calculation</h1>
+        </div>
+      </section>
+    </main>
+
     <script src="js/index.js"></script>
   </body>
 </html>
