@@ -39,7 +39,7 @@
                   <img src="images/triangle.png" alt="Triangle" class="rounded-xl -full h-40">
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
+                  <h2 id="shape-title" class="card-title">Triangle</h2>
                   <p>Area(A) = <span>0.5</span> * <span>b</span> * <span>h</span></p>
                   <div class="card-actions">
                     <div>
@@ -54,7 +54,7 @@
                           <input type="text" placeholder="Type Height" class="input input-xs w-full max-w-xs"/>
                         </label>
                       </div>
-                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                      <button id="triangle-btn" class="btn bg-[#1090D8] border-0 px-10 mt-5">
                         Calculate
                       </button>
                     </div>
@@ -73,12 +73,12 @@
                     <div>
                       <div class="form-control">
                         <label class="input-group input-group-xs">
-                          <span>b</span>
+                          <span>l</span>
                           <input type="text" placeholder="Type Length" class="input input-xs w-full max-w-xs"/> 
                         </label>
                         <br />
                         <label class="input-group input-group-xs">
-                          <span>h</span>
+                          <span>w</span>
                           <input type="text" placeholder="Type Width" class="input input-xs w-full max-w-xs"/>
                         </label>
                       </div>
@@ -129,12 +129,12 @@
                     <div>
                       <div class="form-control">
                         <label class="input-group input-group-xs">
-                          <span>b</span>
+                          <span>d1</span>
                           <input type="text" placeholder="Type Diagonal 1" class="input input-xs w-full max-w-xs"/>
                         </label>
                         <br />
                         <label class="input-group input-group-xs">
-                          <span>h</span>
+                          <span>d2</span>
                           <input type="text" placeholder="Type Diagonal 2" class="input input-xs w-full max-w-xs"/>
                         </label>
                       </div>
@@ -150,22 +150,14 @@
                   <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl -full h-40"/>
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Pentagon</h2>
+                  <h2 id="pentagon-title" class="card-title">Pentagon</h2>
                   <p>Area(A) = <span>0.5</span> * <span>p</span> * <span>b</span></p>
                   <div class="card-actions">
                     <div>
-                      <div class="form-control">
-                        <label class="input-group input-group-xs">
-                          <span>b</span>
-                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
-                        </label>
-                        <br />
-                        <label class="input-group input-group-xs">
-                          <span>h</span>
-                          <input type="text" placeholder="Type Base" class="input input-xs w-full max-w-xs"/>
-                        </label>
-                      </div>
-                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        <p>
+                            p = <span id="pentagon-first-value">6</span>cm, b = <span id="pentagon-second-value">10</span>cm
+                        </p>
+                      <button id="pentagon-btn" class="btn bg-[#1090D8] border-0 px-10 mt-5">
                         Calculate
                       </button>
                     </div>
@@ -178,22 +170,14 @@
                   <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl -full h-40" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Ellipse</h2>
+                  <h2 id="ellipse-title" class="card-title">Ellipse</h2>
                   <p>Area(A) = <span>&#960;</span>a<span>b</span></p>
                   <div class="card-actions">
                     <div>
-                      <div class="form-control">
-                        <label class="input-group input-group-xs">
-                          <span>b</span>
-                          <input type="text" placeholder="Type A Axis" class="input input-xs w-full max-w-xs"/>
-                        </label>
-                        <br />
-                        <label class="input-group input-group-xs">
-                          <span>h</span>
-                          <input type="text" placeholder="Type B Axis" class="input input-xs w-full max-w-xs"/>
-                        </label>
-                      </div>
-                      <button class="btn bg-[#1090D8] border-0 px-10 mt-5">
+                        <p>
+                        a = <span id="ellipse-first-value">10</span>cm, b = <span id="ellipse-second-value">4</span>cm
+                        </p>
+                      <button id="ellipse-btn" class="btn bg-[#1090D8] border-0 px-10 mt-5">
                         Calculate
                       </button>
                     </div>
@@ -205,9 +189,17 @@
 
         <div class="w-full md:w-[40%] lg:w-[40%] mx-auto">
             <h1 class="text-3xl text-center font-bold underline mt-10">Area Calculation</h1>
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                    <tbody id="table-container" class="font-bold">
+                    
+                    </tbody>
+                </table>
+            </div>
         </div>
       </section>
     </main>
+    
 
     <script src="js/index.js"></script>
   </body>
