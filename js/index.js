@@ -95,6 +95,14 @@ function displayData(shapeTitle, shapeValue) {
     tableContainer.appendChild(tr);
 }
 
+
+function load_blog() {
+    window.location.href = 'blog.html'
+}
+
+
+
+
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
