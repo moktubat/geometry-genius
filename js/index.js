@@ -19,20 +19,22 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     // Get value from tag using .innerText.
     const triangleTitle = document.getElementById('triangle-title').innerText;
     // Get value from input filed using by function.
-    const firstTriangleValue = getFirstInputValueById('triangle-first-value');
-    const secondTriangleValue = getSecondInputValueById('triangle-second-value');
-    if (firstTriangleValue === 'number' && secondTriangleValue === 'number'){
-        const areaValue= 0.5 * parseInt(firstTriangleValue) * parseInt(secondTriangleValue);
-        const triangleValue = areaValue;
-    }
-    else{
-        alert("Input Valid Number");
-    }
-    // Calculate Triangle Area Shape
-    
-    // Display triangleTitle, triangleValue by fucntion callback.
+    const firstTriangleValueStr = getFirstInputValueById('triangle-first-value');
+    const firstTriangleValue = parseFloat(firstTriangleValueStr);
+    const secondTriangleValueStr = getSecondInputValueById
+    ('triangle-second-value');
+    const secondTriangleValue = parseFloat(secondTriangleValueStr);
+
+    // validation check , calculete value and display output passing by perameter.
+    if(isNaN(firstTriangleValue) || isNaN(secondTriangleValue))
+    {
+    alert("Wrong input!!!");
+    return false;
+    } else {
+    const areaValue= 0.5 * firstTriangleValue * secondTriangleValue;
+    const triangleValue = areaValue;
     displayData(triangleTitle, triangleValue);
-    
+    }
 })
 
 // Add click event handler with rectangle button.
@@ -41,14 +43,21 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     // Get value from tag using .innerText.
     const rectangleTitle = document.getElementById('rectangle-title').innerText;
     // Get value from input filed using by function.
-    const firstRectangleValue = getFirstInputValueById('rectangle-first-value');
-    const secondRectangleValue = getSecondInputValueById('rectangle-second-value');
-    // Calculate rectangle Area Shape
-    const areaValue= parseInt(firstRectangleValue) * parseInt(secondRectangleValue);
-    const rectangleValue = areaValue;
-    // Display rectangleTitle, rectangleValue by fucntion callback.
-    displayData(rectangleTitle, rectangleValue);
+    const firstRectangleValueStr = getFirstInputValueById('rectangle-first-value');
+    const firstRectangleValue = parseFloat(firstRectangleValueStr);
+    const secondRectangleValueStr = getSecondInputValueById('rectangle-second-value');
+    const secondRectangleValue = parseFloat(secondRectangleValueStr);
     
+    // validation check , calculete value and display output passing by perameter.
+    if(isNaN(firstRectangleValue) || isNaN(secondRectangleValue))
+    {
+    alert("Wrong input!!!");
+    return false;
+    } else {
+    const areaValue= firstRectangleValue * secondRectangleValue;
+    const rectangleValue = areaValue;
+    displayData(rectangleTitle, rectangleValue);
+    }   
 })
 
 // Add click event handler with parallelogram button.
@@ -57,14 +66,21 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     // Get value from tag using .innerText.
     const parallelogramTitle = document.getElementById('parallelogram-title').innerText;
     // Get value from input filed using by function.
-    const firstParallelogramValue = getFirstInputValueById('parallelogram-first-value');
-    const secondParallelogramValue = getSecondInputValueById('parallelogram-second-value');
-    // Calculate parallelogram Area Shape
-    const areaValue= parseInt(firstParallelogramValue) * parseInt(secondParallelogramValue);
-    const parallelogramValue = areaValue;
-    // Display parallelogramTitle, parallelogramValue by fucntion callback.
-    displayData(parallelogramTitle, parallelogramValue);
+    const firstParallelogramValueStr = getFirstInputValueById('parallelogram-first-value');
+    const firstParallelogramValue = parseFloat(firstParallelogramValueStr);
+    const secondParallelogramValueStr = getSecondInputValueById('parallelogram-second-value');
+    const secondParallelogramValue = parseFloat(secondParallelogramValueStr);
     
+    // validation check , calculete value and display output passing by perameter.
+    if(isNaN(firstParallelogramValue) || isNaN(secondParallelogramValue))
+    {
+    alert("Wrong input!!!");
+    return false;
+    } else {
+    const areaValue= firstParallelogramValue * secondParallelogramValue;
+    const parallelogramValue = areaValue;
+    displayData(parallelogramTitle, parallelogramValue);
+    }
 })
 
 // Add click event handler with rhombus button.
@@ -73,14 +89,22 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
     // Get value from tag using .innerText.
     const rhombusTitle = document.getElementById('rhombus-title').innerText;
     // Get value from input filed using by function.
-    const firstRhombusValue = getFirstInputValueById('rhombus-first-value');
-    const secondRhombusValue = getFirstInputValueById('rhombus-first-value');
-    // Calculate rhombus Area Shape
-    const areaValue= 0.5 * parseInt(firstRhombusValue) * parseInt(secondRhombusValue);
-    const rhombusValue = areaValue;
-    // Display parallelogramTitle, parallelogramValue by fucntion callback.
-    displayData(rhombusTitle, rhombusValue);
+    const firstRhombusValueStr = getFirstInputValueById('rhombus-first-value');
+    const firstRhombusValue = parseFloat(firstRhombusValueStr);
+    const secondRhombusValueStr = getFirstInputValueById('rhombus-first-value');
+    const secondRhombusValue = parseFloat(secondRhombusValueStr);
     
+    // validation check , calculete value and display output passing by perameter.
+    if(isNaN(firstRhombusValue) || isNaN(secondRhombusValue))
+    {
+    alert("Wrong input!!!");
+    return false;
+    } else {
+    const areaValue= 0.5 * firstRhombusValue * secondRhombusValue;
+    const rhombusValue = areaValue;
+    displayData(rhombusTitle, rhombusValue);
+    }
+   
 })
 
 // A simple function for first value of shape.
@@ -103,7 +127,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
     const firstPentagonValue = getFirstInnerTextById('pentagon-first-value');
     const secondPentagonValue = getSecondInnerTextById('pentagon-second-value');
     // Calculate pentagon Area Shape
-    const areaValue= 0.5 * parseInt(firstPentagonValue) * parseInt(secondPentagonValue);
+    const areaValue= 0.5 * parseFloat(firstPentagonValue) * parseFloat(secondPentagonValue);
     const pentagonValue = areaValue;
     // Display pentagonTitle, pentagonValue by fucntion callback.
     displayData(pentagonTitle, pentagonValue);
@@ -119,7 +143,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
     const firstEllipseValue = getFirstInnerTextById('ellipse-first-value');
     const secondEllipseValue = getSecondInnerTextById('ellipse-second-value');
     // Calculate ellipse Area Shape
-    const areaValue= Math.PI * parseInt(firstEllipseValue) * parseInt(secondEllipseValue);
+    const areaValue= Math.PI * parseFloat(firstEllipseValue) * parseFloat(secondEllipseValue);
     const ellipseValue = areaValue.toFixed(2);
     // Display ellipseTitle, ellipseValue by fucntion callback.
     displayData(ellipseTitle, ellipseValue);
