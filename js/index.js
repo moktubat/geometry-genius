@@ -30,7 +30,12 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     {
     alert("Wrong input!!!");
     return false;
-    } else {
+    }
+    else if(firstTriangleValue < 0 || secondTriangleValue < 0){
+        alert("Input Positive Number!!!");
+        return false;
+    }
+    else {
     const areaValue= 0.5 * firstTriangleValue * secondTriangleValue;
     const triangleValue = areaValue;
     displayData(triangleTitle, triangleValue);
@@ -53,7 +58,12 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     {
     alert("Wrong input!!!");
     return false;
-    } else {
+    }
+    else if(firstRectangleValue < 0 || secondRectangleValue < 0){
+        alert("Input Positive Number!!!");
+        return false;
+    }
+    else {
     const areaValue= firstRectangleValue * secondRectangleValue;
     const rectangleValue = areaValue;
     displayData(rectangleTitle, rectangleValue);
@@ -76,7 +86,12 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     {
     alert("Wrong input!!!");
     return false;
-    } else {
+    }
+    else if(firstParallelogramValue < 0 || secondParallelogramValue < 0){
+        alert("Input Positive Number!!!");
+        return false;
+    }
+    else {
     const areaValue= firstParallelogramValue * secondParallelogramValue;
     const parallelogramValue = areaValue;
     displayData(parallelogramTitle, parallelogramValue);
@@ -99,7 +114,12 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
     {
     alert("Wrong input!!!");
     return false;
-    } else {
+    }
+    else if(firstRhombusValue < 0 || secondRhombusValue < 0){
+        alert("Input Positive Number!!!");
+        return false;
+    }
+    else {
     const areaValue= 0.5 * firstRhombusValue * secondRhombusValue;
     const rhombusValue = areaValue;
     displayData(rhombusTitle, rhombusValue);
